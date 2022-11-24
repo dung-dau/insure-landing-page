@@ -1,0 +1,119 @@
+/* -------------------------- */
+/*           Reset            */
+/* -------------------------- */
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 400;
+}
+
+/* set up the body */
+body {
+  font-family: 'Karla', sans-serif;
+  color: gray;
+  font-size: 16px;
+  line-height: 1.5;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* make form elements easier to work with */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* remove animations for people who have turned them off */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.primary-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+}
+
+.mobile-nav-toggle {
+  background-color: transparent;
+  border: none;
+}
+
+.padding-4 {
+  padding: 1rem;
+}
+
+.text-white {
+  color: white;
+}
+
+.intro {
+  background-image: url('./images/bg-pattern-intro-left-mobile.svg'),
+    url('./images/bg-pattern-intro-right-mobile.svg');
+  height: 30rem;
+  background-position: top left, bottom right;
+  background-repeat: no-repeat, no-repeat;
+  background-color: #2c2640;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.secondary-button {
+  border: 1px solid white;
+  color: white;
+  background-color: transparent;
+  /* box-shadow: none; */
+  padding: 5px 40px;
+}
+
+.secondary-button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
