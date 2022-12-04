@@ -33,11 +33,11 @@
   <body>
     <header class="flex flex-align-center flex-justify-space-between">
       <div class="padding-4">
-        <img src="./images/logo.svg" />
+        <img src="./images/logo.svg" alt="Insure logo" />
       </div>
 
       <button class="mobile-nav-toggle padding-4">
-        <img src="./images/icon-hamburger.svg" />
+        <img src="./images/icon-hamburger.svg" alt="Hamburger menu icon" />
       </button>
       <nav style="display: none">
         <ul class="primary-naviation">
@@ -57,12 +57,13 @@
         <img
           src="./images/image-intro-mobile.jpg"
           class="intro-image-container"
+          alt="Hero image"
         />
       </picture>
-      <div class="main-container">
-        <h1 class="fs-800 ff-serif text-white">Humanizing your insurance.</h1>
+      <div class="main-container text-white" style="text-align: left">
+        <h1 class="fs-800 ff-serif">Humanizing your insurance.</h1>
 
-        <p class="text-white">
+        <p>
           Get your life insurance coverage easier and faster. We blend our
           expertise and technology to help you find the plan that’s right for
           you. Ensure you and your loved ones are protected.
@@ -71,13 +72,16 @@
       </div>
     </div>
 
-    <div class="subtitle">
+    <div class="subtitle fs-800 ff-serif text-dark">
       <h1>We’re different</h1>
     </div>
     <main class="body-content text-center flex-center-columns">
       <div class="container">
         <div class="flex flex-center">
-          <img src="./images/icon-snappy-process.svg" />
+          <img
+            src="./images/icon-snappy-process.svg"
+            alt="ligntning bolt icon"
+          />
         </div>
         <h2 class="text-dark text-bold ff-serif">Snappy Process</h2>
         <p>
@@ -87,7 +91,7 @@
       </div>
       <div class="container">
         <div class="flex flex-center">
-          <img src="./images/icon-affordable-prices.svg" />
+          <img src="./images/icon-affordable-prices.svg" alt="Money icon" />
         </div>
         <h2 class="text-dark text-bold ff-serif">Affordable Prices</h2>
         <p>
@@ -97,7 +101,7 @@
       </div>
       <div class="container">
         <div class="flex flex-center">
-          <img src="./images/icon-people-first.svg" />
+          <img src="./images/icon-people-first.svg" alt="People icon" />
         </div>
         <h2 class="text-dark text-bold ff-serif">People First</h2>
         <p>
@@ -106,7 +110,7 @@
         </p>
       </div>
     </main>
-    <section class="container">
+    <section class="container how-we-work-container">
       <div class="how-we-work text-white text-center flex-center-columns">
         <h1 class="ff-serif fs-800">Find out more about how we work</h1>
         <button class="secondary-button">How we work</button>
@@ -114,60 +118,68 @@
     </section>
 
     <footer>
-      <div class="first-footer-container flex-center-columns">
-        <div class="flex flex-center block">
-          <img src="./images/logo.svg" />
+      <div class="footer-header-container">
+        <div class="first-footer-container flex-center-columns">
+          <div class="flex flex-center block">
+            <img
+              src="./images/logo.svg"
+              class="footer-logo"
+              alt="Insure logo"
+            />
+          </div>
+          <div>
+            <ul class="social-media-list">
+              <li>
+                <img src="./images/icon-facebook.svg" alt="Facebook Logo" />
+              </li>
+              <li>
+                <img src="./images/icon-twitter.svg" alt="Twitter Logo" />
+              </li>
+              <li>
+                <img src="./images/icon-pinterest.svg" alt="Pinterest Logo" />
+              </li>
+              <li>
+                <img src="./images/icon-instagram.svg" alt="Instagram Logo" />
+              </li>
+            </ul>
+          </div>
         </div>
-        <div>
-          <ul class="social-media-list">
-            <li>
-              <img src="./images/icon-facebook.svg" />
-            </li>
-            <li>
-              <img src="./images/icon-twitter.svg" alt="" />
-            </li>
-            <li>
-              <img src="./images/icon-pinterest.svg" />
-            </li>
-            <li>
-              <img src="./images/icon-instagram.svg" />
-            </li>
+      </div>
+      <div class="footer-list-container">
+        <div class="flex-center-columns">
+          <h3 class="footer-list-title">Our company</h3>
+          <ul class="footer-list">
+            <li class=""><a>How we work</a></li>
+            <li><a>Why Insure?</a></li>
+            <li><a>View plans</a></li>
+            <li><a>Reviews</a></li>
           </ul>
         </div>
-      </div>
-      <div class="flex-center-columns">
-        <h3 class="footer-list-title">Our company</h3>
-        <ul class="footer-list">
-          <li class=""><a>How we work</a></li>
-          <li><a>Why Insure?</a></li>
-          <li><a>View plans</a></li>
-          <li><a>Reviews</a></li>
-        </ul>
-      </div>
-      <div class="flex-center-columns">
-        <h3 class="footer-list-title">Help me</h3>
-        <ul class="footer-list">
-          <li><a>FAQ</a></li>
-          <li><a>Terms of use</a></li>
-          <li><a>Privacy policy</a></li>
-          <li><a>Cookies</a></li>
-        </ul>
-      </div>
-      <div class="flex-center-columns">
-        <h3 class="footer-list-title">Contact</h3>
-        <ul class="footer-list">
-          <li><a>Sales</a></li>
-          <li><a>Support</a></li>
-          <li><a>Live chat</a></li>
-        </ul>
-      </div>
-      <div class="flex-center-columns">
-        <h3 class="footer-list-title">Others</h3>
-        <ul class="footer-list">
-          <li><a>Careers</a></li>
-          <li><a>Press</a></li>
-          <li><a>Licenses</a></li>
-        </ul>
+        <div class="flex-center-columns">
+          <h3 class="footer-list-title">Help me</h3>
+          <ul class="footer-list">
+            <li><a>FAQ</a></li>
+            <li><a>Terms of use</a></li>
+            <li><a>Privacy policy</a></li>
+            <li><a>Cookies</a></li>
+          </ul>
+        </div>
+        <div class="flex-center-columns">
+          <h3 class="footer-list-title">Contact</h3>
+          <ul class="footer-list">
+            <li><a>Sales</a></li>
+            <li><a>Support</a></li>
+            <li><a>Live chat</a></li>
+          </ul>
+        </div>
+        <div class="flex-center-columns">
+          <h3 class="footer-list-title">Others</h3>
+          <ul class="footer-list">
+            <li><a>Careers</a></li>
+            <li><a>Press</a></li>
+            <li><a>Licenses</a></li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>

@@ -13,12 +13,7 @@
   /* font sizes */
   --fs-900: clamp(5rem, 7vw + 1rem, 9.375rem);
   --fs-800: 3rem;
-  --fs-700: 2rem;
-  --fs-600: 1rem;
-  --fs-500: 1rem;
-  --fs-400: 0.9375rem;
-  --fs-300: 1rem;
-  --fs-200: 0.875rem;
+  --fs-700: 2.5rem;
 
   /* font-families */
   --ff-sans-serif: 'Karla', sans-serif;
@@ -211,6 +206,7 @@ select {
 
 .subtitle {
   display: none;
+  font-size: 24px;
 }
 
 .body-content {
@@ -225,9 +221,10 @@ select {
   aspect-ratio: 33 / 35 ;
   margin-bottom: 8rem;
   padding: 0 1rem;
+  flex: 1;
 }
 
-.body-contente > * + *,
+.body-content > * + *,
 .how-we-work > * + * {
   margin-top: 3rem;
 }
@@ -269,6 +266,10 @@ select {
   margin-top: 0.75rem;
 }
 
+.footer-logo {
+  margin-bottom: 2rem;
+}
+
 @media screen and (min-width: 540px) {    
   .intro-image-container {
       position: relative;
@@ -280,14 +281,58 @@ select {
   .main-container {
       padding-top: 10rem;
       padding-left: 10rem;
+      text-align: left;
   }
 
   .ultimate-container {
       height: 100vh;
-  }
-
-  .ultimate-container {
       background: rgb(45,38,64);
       background: linear-gradient(0deg, rgba(255,255,255,1) 40%, rgba(45,38,64,1) 0%);
+  }
+
+  .subtitle {
+    display: block;
+    margin-left: 10rem;
+  }
+
+  .body-content {
+    flex-direction: row;
+    height: 30rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+
+  .body-content > * + * {
+    margin-top: 0;
+  }
+
+  .how-we-work {
+    flex-direction: row;
+    aspect-ratio: 33 / 7 ;
+  }
+
+  .how-we-work-container {
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+
+  .footer-list-container {
+    display: flex;
+  }
+
+  footer {
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-bottom: 6rem;
+  }
+
+.first-footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+  .footer-list-container > * {
+    margin-right: 10rem;
   }
 }
