@@ -96,35 +96,6 @@ select {
 }
 
 /* -------------------------- */
-/*      Utility Classes       */
-/* -------------------------- */
-.flex {
-  display: flex;
-}
-
-.flex-center {
-  align-items: center;
-  justify-content: center;
-}
-
-.flex-columns {
-  flex-direction: column;
-}
-
-.container {
-  margin: 0 1.25rem;
-  z-index: 1;
-}
-
-.container > * + * {
-  margin-top: 2.5rem;
-}
-
-.padding-4 {
-  padding: 1rem;
-}
-
-/* -------------------------- */
 /*           Colors           */
 /* -------------------------- */
 .text-white {
@@ -142,75 +113,74 @@ select {
   text-align: center;
 }
 
-.text-bold {
-  font-weight: bold;
-}
-
 .ff-serif {
   font-family: var(--ff-serif);
 }
 
-/* font size utility classes */
-.fs-900 {
-  font-size: var(--fs-900);
-}
 .fs-800 {
   font-size: var(--fs-800);
-}
-.fs-700 {
-  font-size: var(--fs-700);
-}
-.fs-600 {
-  font-size: var(--fs-600);
-}
-.fs-500 {
-  font-size: var(--fs-500);
-}
-.fs-400 {
-  font-size: var(--fs-400);
-}
-.fs-300 {
-  font-size: var(--fs-300);
-}
-.fs-200 {
-  font-size: var(--fs-200);
+  line-height: 1;
 }
 
-/* line height utility class */
-.fs-900,
-.fs-800,
-.fs-700,
-.fs-600 {
-  line-height: 1;
+.text-bold {
+  font-weight: bold;
+}
+
+/* -------------------------- */
+/*      Utility Classes       */
+/* -------------------------- */
+.padding-4 {
+  padding: 1rem;
+}
+
+.padding-top-6 {
+  padding-top: 10rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-align-center {
+  align-items: center;
+}
+
+.flex-justify-space-between {
+  justify-content: space-between;
+}
+
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  margin: 0 1.25rem;
+  z-index: 1;
+}
+
+.flex-columns {
+  flex-direction: column;
+}
+
+.flex-center-columns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 /* -------------------------- */
 /*         Components         */
 /* -------------------------- */
-.background-image {
-  width: 100%;
-  height: auto;
-}
-
-.intro-bg-left {
-  position: absolute;
-}
-
-.intro-bg-right {
-  position: absolute;
-  right: 0;
-  top: 55rem;
-}
-
-.primary-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .mobile-nav-toggle {
   background-color: transparent;
   border: none;
+}
+
+.ultimate-container {
+  background: rgb(45,38,64);
+  background-color: hsl(var(--clr-dark-violet));
 }
 
 .secondary-button {
@@ -226,9 +196,17 @@ select {
   color: black;
 }
 
-.intro {
-  background-color: hsl(var(--clr-dark-violet));
-  aspect-ratio: 3 / 4;
+.main-container {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5rem 2rem;
+}
+
+.container > * + *,
+.main-container > * + * {
+  margin-top: 2.5rem;
 }
 
 .subtitle {
@@ -236,16 +214,7 @@ select {
 }
 
 .body-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items:center;
-  text-align: center;
   height: 70rem;
-}
-
-.body-content > * + * {
-  margin-top: 3rem;
 }
 
 .how-we-work {
@@ -258,21 +227,13 @@ select {
   padding: 0 1rem;
 }
 
+.body-contente > * + *,
 .how-we-work > * + * {
   margin-top: 3rem;
 }
 
-footer {
-  background-color: var(--clr-gray);
-  padding: 6rem 0;
-}
-
-footer > * + * {
-  margin-top: 1.5rem;
-}
-
-.footer-image {
-  position: absolute;
+.first-footer-container > * + * {
+  margin-bottom: 3rem;
 }
 
 .social-media-list {
@@ -287,17 +248,10 @@ footer > * + * {
   padding: 0.05rem;
 }
 
-.block {
-  display: block;
-}
-
-.first-footer-container > * + * {
-  margin-bottom: 3rem;
-}
-
 .footer-list-title {
   text-transform: uppercase;
   font-weight: bold;
+  margin-top: 2rem;
 }
 
 .footer-list {
@@ -315,17 +269,25 @@ footer > * + * {
   margin-top: 0.75rem;
 }
 
-//Desktop styles
-@media screen and (min-width: 35rem) {
-  img,
-  picture {
-    /* max-width: 100%; */
-    display: inline-block;
-    height: 20px;
+@media screen and (min-width: 540px) {    
+  .intro-image-container {
+      position: relative;
+      float: right;
+      margin-right: 10rem;
+      margin-top: 6rem;
   }
-  .background-image {
-    position: absolute;
-    height: 0;
-    border: 1px solid red;
+
+  .main-container {
+      padding-top: 10rem;
+      padding-left: 10rem;
+  }
+
+  .ultimate-container {
+      height: 100vh;
+  }
+
+  .ultimate-container {
+      background: rgb(45,38,64);
+      background: linear-gradient(0deg, rgba(255,255,255,1) 40%, rgba(45,38,64,1) 0%);
   }
 }
