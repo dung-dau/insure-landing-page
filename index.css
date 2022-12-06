@@ -272,22 +272,22 @@ select {
 
 @media screen and (min-width: 540px) {    
   .intro-image-container {
-      position: relative;
-      float: right;
-      margin-right: 10rem;
-      margin-top: 6rem;
+    position: relative;
+    float: right;
+    margin-right: 10rem;
+    margin-top: 6rem;
   }
 
   .main-container {
-      padding-top: 10rem;
-      padding-left: 10rem;
-      text-align: left;
+    padding-top: 10rem;
+    padding-left: 10rem;
+    text-align: left;
   }
 
   .ultimate-container {
-      height: 100vh;
-      background: rgb(45,38,64);
-      background: linear-gradient(0deg, rgba(255,255,255,1) 40%, rgba(45,38,64,1) 0%);
+    height: 100vh;
+    background: rgb(45,38,64);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 40%, rgba(45,38,64,1) 0%);
   }
 
   .subtitle {
@@ -320,19 +320,26 @@ select {
     display: flex;
   }
 
+  .footer-list-container > * {
+    margin-right: 10rem;
+  }
+
   footer {
     margin-left: 10rem;
     margin-right: 10rem;
     margin-bottom: 6rem;
   }
 
-.first-footer-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
+  .first-footer-container {
+    flex-direction: row;
+  }
 
-  .footer-list-container > * {
-    margin-right: 10rem;
+  .footer-list {
+    text-align: left;
+  }
+
+  .footer-list-title {
+    align-self: start;
+    margin-top: 0;
   }
 }
