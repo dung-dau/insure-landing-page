@@ -308,6 +308,8 @@ select {
 
   .how-we-work {
     flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
     aspect-ratio: 33 / 7 ;
   }
 
@@ -332,6 +334,7 @@ select {
 
   .first-footer-container {
     flex-direction: row;
+    justify-content: space-between;
   }
 
   .footer-list {
@@ -341,5 +344,13 @@ select {
   .footer-list-title {
     align-self: start;
     margin-top: 0;
+  }
+
+  .find-out {
+    width: 39%;
+  }
+
+  .social-media-logo:hover {
+    filter: brightness(0) saturate(100%);
   }
 }
