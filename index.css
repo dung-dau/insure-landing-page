@@ -191,6 +191,13 @@ select {
   color: black;
 }
 
+.intro-pattern-right {
+  position: absolute;
+  right: 0;
+  top: 88%;
+  /* bottom: 50%; */
+}
+
 .main-container {
   display: flex;
   justify-content:center;
@@ -214,14 +221,16 @@ select {
 }
 
 .how-we-work {
-  background-image: url('./images/bg-pattern-how-we-work-mobile.svg');
-  background-position: top right;
-  background-repeat: no-repeat;
   background-color: hsl(var(--clr-dark-violet));
   aspect-ratio: 33 / 35 ;
   margin-bottom: 8rem;
   padding: 0 1rem;
   flex: 1;
+}
+
+.how-we-work-pattern {
+  position: absolute;
+  right: 5%;
 }
 
 .body-content > * + *,
@@ -290,6 +299,9 @@ select {
     background: linear-gradient(0deg, rgba(255,255,255,1) 40%, rgba(45,38,64,1) 0%);
   }
 
+  .intro-pattern-right {
+  }
+
   .subtitle {
     display: block;
     margin-left: 10rem;
@@ -310,7 +322,7 @@ select {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    aspect-ratio: 33 / 7 ;
+    aspect-ratio: 33 / 7.5 ;
   }
 
   .how-we-work-container {
@@ -352,5 +364,18 @@ select {
 
   .social-media-logo:hover {
     filter: brightness(0) saturate(100%);
+  }
+
+  .intro-pattern-right {
+    top: 0;
+  }
+
+  .intro-pattern-left {
+    position: absolute;
+    top: 50%;
+  }
+
+  .how-we-work-pattern {
+    right: 11%;
   }
 }

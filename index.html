@@ -57,7 +57,31 @@
         <img
           src="./images/image-intro-mobile.jpg"
           class="intro-image-container"
-          alt="Hero image"
+          aria-hidden="true"
+        />
+      </picture>
+      <picture>
+        <source
+          srcset="./images/bg-pattern-intro-left-desktop.svg"
+          media="(min-width: 1440px)"
+        />
+        <img
+          src="./images/bg-pattern-intro-left-mobile.svg"
+          style="position: absolute"
+          class="intro-pattern-left"
+          aria-hidden="true"
+        />
+      </picture>
+      <picture>
+        <source
+          srcset="./images/bg-pattern-intro-right-desktop.svg"
+          media="(min-width: 1440px)"
+          class="intro-pattern-right"
+        />
+        <img
+          src="./images/bg-pattern-intro-right-mobile.svg"
+          class="intro-pattern-right"
+          aria-hidden="true"
         />
       </picture>
       <div class="main-container text-white" style="text-align: left">
@@ -110,6 +134,17 @@
         </p>
       </div>
     </main>
+    <picture>
+      <source
+        srcset="./images/bg-pattern-how-we-work-desktop.svg"
+        media="(min-width: 1440px)"
+      />
+      <img
+        src="./images/bg-pattern-how-we-work-mobile.svg"
+        aria-hidden="true"
+        class="how-we-work-pattern"
+      />
+    </picture>
     <section class="container how-we-work-container">
       <div class="how-we-work text-white text-center flex-center-columns">
         <h1 class="ff-serif fs-800 find-out">
