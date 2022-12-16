@@ -173,6 +173,15 @@ select {
   border: none;
 }
 
+.primary-navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  /* creates the blurring effect for the navigation menu */
+  background: hsl(var(--clr-white) / 0.1);
+  backdrop-filter: blur(20px);
+}
+
 .ultimate-container {
   background: rgb(45,38,64);
   background-color: hsl(var(--clr-dark-violet));

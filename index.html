@@ -36,18 +36,21 @@
         <img src="./images/logo.svg" alt="Insure logo" />
       </div>
 
-      <button class="mobile-nav-toggle padding-4">
+      <button
+        class="mobile-nav-toggle padding-4"
+        aria-controls="primary-navigation"
+      >
         <img src="./images/icon-hamburger.svg" alt="Hamburger menu icon" />
       </button>
-      <nav style="display: none">
-        <ul class="primary-naviation">
-          <li>How we work</li>
-          <li>Blog</li>
-          <li>Account</li>
-          <li>View plans</li>
-        </ul>
-      </nav>
     </header>
+    <nav>
+      <ul class="primary-naviation" data-visible="false">
+        <li>How we work</li>
+        <li>Blog</li>
+        <li>Account</li>
+        <li>View plans</li>
+      </ul>
+    </nav>
     <div class="ultimate-container">
       <picture>
         <source
